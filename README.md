@@ -1,6 +1,6 @@
 # Flutter-FFT with Volume Output
 
-### Plugin at pub-dev
+### The original Plugin at pub-dev
 https://pub.dev/packages/flutter_fft
 
 **Warning:** *Currently works only on Android! This plugin makes use of platform channels, and only the Java/Android platform channel has been implemented.*
@@ -15,26 +15,8 @@ The following needs to be added to your project's `"android/app/src/main/Android
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 ```
 
-This is my first (and currently only) Flutter plugin and Java project.
-
-I was gathering ideas my personal guitar tuner application on Flutter, when I realized that I couldn't find any examples of audio analysis/processing/manipulation with Flutter.
-
-Flutter doesn't have great support for device specific hardware, such as microphone input. Obviously, it is the fundamental pillar for anything that deals with audio processing in real-time.  
-Since Flutter has "just" started to become mainstream, there are still not many real-world projects or examples around.
-
-The plan I ended up coming up with was to code a platform channel for android, which is basically a way to call native code from within Flutter - i.e. Calling Java functions through Dart code, using Flutter.
-
-The problem with this is that, as it calls native platform code, the "one codebase" Flutter feature is rendered useless, since I would have to code the same thing for both platforms. (Objective-C/Swift for iOS & Java/Kotlin for Android)
-
-Because of that, at the moment, I only coded the android platform channel. An iOS platform channel is in the plans for future versions.
-
 ## How to use
-
-As mentioned above, this plugin was purely intended for usage in my personal project, however, since I couldn't find similar implementations, I decided to upload it here, in case anyone else goes through the same process.
-
-Because of this, what you can do with the plugin is very strict: Start recording, get data back from the platform channel, and stop recording.
-
-If you know how to program however, you can easily modify the code for your own needs.
+What you can do with the plugin is very strict: Start recording, get data back from the platform channel, and stop recording.
 
 There are many getters and setters for the processed and default data, which are going to be discussed further below.
 
