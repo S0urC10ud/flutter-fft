@@ -134,18 +134,20 @@ class ApplicationState extends State<Application> {
 ## Contents of the Data-Array in the stateChangedListener
 The following list displays the arrays content in the corresponding order:
 
-0. tolerance
-1. frequency
-2. note
-3. target
-4. distance
-5. octave
-6. nearestNote
-7. nearestTarget
-8. nearestDistance
-9. nearestOctave
-10. isOnPitch
-11. volume
+<ol start="0">
+  <li>tolerance</li>
+  <li>frequency</li>
+  <li>note</li>
+  <li>target</li>
+  <li>distance</li>
+  <li>octave</li>
+  <li>nearestNote</li>
+  <li>nearestTarget</li>
+  <li>nearestDistance</li>
+  <li>nearestOctave</li>
+  <li>isOnPitch</li>
+  <li>volume</li>
+</ol>
 
 ## Methods
 
