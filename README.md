@@ -1,4 +1,4 @@
-# Flutter FFT
+# Flutter-FFT with Volume Output
 
 ### Plugin at pub-dev
 https://pub.dev/packages/flutter_fft
