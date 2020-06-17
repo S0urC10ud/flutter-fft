@@ -131,6 +131,21 @@ class ApplicationState extends State<Application> {
 }
 ```
 
+## Contents of the Data-Array in the stateChangedListener
+The following list displays the arrays content in the corresponding order:
+0. tolerance
+1. frequency
+2. note
+3. target
+4. distance
+5. octave
+6. nearestNote
+7. nearestTarget
+8. nearestDistance
+9. nearestOctave
+10. isOnPitch
+11. volume
+
 ## Methods
 
 When we instantiate the plugin, a method channel variable is created, with the tag `"com.slins.flutterfft/record"`.
