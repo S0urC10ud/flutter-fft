@@ -46,7 +46,7 @@ public class PitchModel implements PitchInterface {
                 for (int i = 0; i < bufferData.length; i++) { // MAKING THE TYPE CONVERSION
                     floatData[i] = (float) bufferData[i];
                 }
-
+                FlutterFftPlugin.volume = (float) VolumeAnalyser.getNoiseLevel(floatData);
                 FlutterFftPlugin.frequency = pitchDetector.getPitch(floatData).getPitch(); // GET DETECTED FREQUENCY FROM AUDIO
 
                 if (FlutterFftPlugin.frequency != -1) { // PROCEED IF FREQUENCY WAS DETECTED, RETURN AN ERROR OTHERWISE
@@ -69,6 +69,7 @@ public class PitchModel implements PitchInterface {
                         returnData.add(FlutterFftPlugin.nearestDistance);
                         returnData.add(FlutterFftPlugin.nearestOctave);
                         returnData.add(isOnPitch);
+                        returnData.add(FlutterFftPlugin.volume);
                     } catch(Exception err) {
                         result.error(ERROR_DATA_FAILURE, "Could not set return data, error: " + err.toString(), null);
                     }

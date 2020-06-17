@@ -49,6 +49,7 @@ public class FlutterFftPlugin implements MethodCallHandler, PluginRegistry.Reque
     public static float nearestTarget = 0;
     public static float nearestDistance = 0;
     public static int nearestOctave = 0;
+    public static float volume = 0;
 
     private final ExecutorService taskScheduler = Executors.newSingleThreadExecutor(); // MAIN THREAD
 
