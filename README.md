@@ -132,7 +132,7 @@ class ApplicationState extends State<Application> {
 ```
 
 ## Contents of the Data-Array in the stateChangedListener
-The following list displays the arrays content in the corresponding order:
+The following list displays the arrays content in the corresponding order:\
 0. tolerance
 1. frequency
 2. note
