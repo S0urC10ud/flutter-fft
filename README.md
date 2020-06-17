@@ -128,7 +128,7 @@ The following list displays the arrays content in the corresponding order:
   <li>nearestDistance</li>
   <li>nearestOctave</li>
   <li>isOnPitch</li>
-  <li>volume</li>
+  <li>volume (in dB)</li>
 </ol>
 
 ## Methods
